@@ -1,0 +1,11 @@
+{% extends 'site/layout.html' %}
+
+{% block site %}
+
+<ol>
+	{% for user in users %}
+		<li>{{ user.firstName }} {{ user.lastName }}</li>
+	{% endfor %}
+</ol>
+
+{% endblock %}
